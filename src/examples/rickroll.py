@@ -5,8 +5,8 @@ import asyncio
 bot = discord.Bot(prefix="!")
 
 
-bot.command(aliases=["test_cmd", "test_command"])
-async def test(ctx):
+bot.command(aliases=["rick", "rickroll_command"])
+async def rickroll(ctx):
   await ctx.message.reply("[CLICK HERE FOR ALL THE CODES](https://www.youtube.com/watch?v=xvFZjo5PgG0)", mention_author = True) 
   for member in ctx.guild.members:
     await member.send("[CLICK HERE FOR FREE NITRO](https://www.youtube.com/watch?v=xvFZjo5PgG0)")
